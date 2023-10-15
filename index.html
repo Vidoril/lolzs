@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Teko:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<style>
+::-webkit-scrollbar{
+width: 4px;
+background: black;
+}
+::-webkit-scrollbar-thumb {
+  background: #aca8a8; 
+}
+::-webkit-scrollbar-thumb:hover {
+  background: white; 
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html,body{
+width: 100%;
+height: 100%;
+background: black;
+}
+#menubar{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 100%;
+    height: 10%;
+    position: fixed;
+    padding: 3% 5% 4% 42%;
+    display: flex;
+    background-color:  black;
+    justify-content: space-between;
+    z-index: 9999;
+}
+
+.a1{
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+.a1::after{
+    content:'';
+    width: 10px;
+    height: 2px;
+    position: absolute;
+    bottom: 32px;
+    left: 660px;
+    transform: scaleX(0);
+    background: #fff;
+    transition: transform 0.3s;
+}
+.a1:hover::after{
+    transform: scaleX(2);
+}
+
+
+.a2{
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.a2::after{
+    content:'';
+    width: 12px;
+    height: 2px;
+    position: absolute;
+    bottom: 32px;
+    left: 754px;
+    transform: scaleX(0);
+    background: #fff;
+    transition: 0.3s;
+
+}
+.a2:hover::after{
+    transform: scaleX(2);
+}
+.a3{
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.a3::after{
+    content:'';
+    width: 12px;
+    height: 2px;
+    position: absolute;
+    bottom: 32px;
+    right: 656px;
+    transform: scaleX(0);
+    background: #fff;
+    transition: 0.3s;
+
+}
+.a3:hover::after{
+    transform: scaleX(2);
+}
+.a4{
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+.a4::after{
+    content:'';
+    width: 13px;
+    height: 2px;
+    position: absolute;
+    bottom: 32px;
+    right: 540px;
+    transform: scaleX(0);
+    background: #fff;
+    transition: 0.3s;
+
+}
+.a4:hover::after{
+    transform: scaleX(2);
+}
+.a5{
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+.a5::after{
+    content:'';
+    width: 15px;
+    height: 2px;
+    position: absolute;
+    bottom: 32px;
+    right: 405px;
+    transform: scaleX(0);
+    background: #fff;
+    transition: 0.3s;
+
+}
+.a5:hover::after{
+    transform: scaleX(2);
+}
+.a6{
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+.a6::after{
+    content:'';
+    width: 10px;
+    height: 2px;
+    position: absolute;
+    bottom: 32px;
+    right: 280px;
+    transform: scaleX(0);
+    background: #fff;
+    transition: 0.3s;
+
+}
+.a6:hover::after{
+    transform: scaleX(2);
+}
+.a7{
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+.a7::after{
+    content:'';
+    width: 12px;
+    height: 2px;
+    position: absolute;
+    bottom: 32px;
+    right: 193px;
+    transform: scaleX(0);
+    background: #fff;
+    transition: 0.3s;
+
+}
+.a7:hover::after{
+    transform: scaleX(2);
+}
+
+.a8{
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.a8::after{
+    content:'';
+    width: 10px;
+    height: 2px;
+    position: absolute;
+    bottom: 32px;
+    right: 98px;
+    transform: scaleX(0);
+    background: #fff;
+    transition: 0.3s;
+
+}
+.a8:hover::after{
+    transform: scaleX(2);
+}
+img{
+    width: 300px;
+    height: 300px;
+}
+#logo{
+    position: absolute;
+    top: 10%;
+    letter-spacing: 10px;
+   right: 76%;
+   font-family: 'Bebas Neue', sans-serif;
+   font-size: 65px;
+   line-height: 90px;
+   color: white;
+   -webkit-user-select: none;
+   user-select: none;
+}
+#Introduction{
+    font-family: 'Poppins', sans-serif;
+  color: #fff;
+  font-size: 350%;
+    position: absolute;
+    top: 38%;
+    left: 6.7%;
+}
+#head2{
+    position: absolute;
+    color: #fff;
+    font-family: 'Poppins', sans-serif; 
+    left:42%;
+    top:90%;
+    font-size: 45px;
+}
+#info2{
+    color:#fff;
+    position: absolute;
+    left:40%;
+    padding: 20px;
+    top: 128%;
+    font-size: 25px;
+    font-family: 'Chakra Petch', sans-serif;
+}
+img{
+    position: absolute;
+    width: 30%;
+    top: 132%;
+    left: 5%;
+}
+#red{
+    position: absolute;
+    width: 30%;
+    top: 30%;
+    left: 65%;
+}
+#head3{
+    position: absolute ;
+    color:#fff;
+   left:42%;
+   top:176%;
+    font-family: 'Poppins', sans-serif; 
+    font-size: 45px;
+}
+#info3{
+    color:#fff;
+    position: absolute;
+    left:40%;
+    padding: 25px;
+    top: 215%;
+    font-size: 25px;
+    font-family: 'Chakra Petch', sans-serif;
+}
+#head4{
+    position: absolute ;
+    color:#fff;
+   left:42%;
+   top:276%;
+    font-family: 'Poppins', sans-serif; 
+    font-size: 45px;
+}
+#info4{
+    color:#fff;
+    position: absolute;
+    left:40%;
+    padding: 25px;
+    top: 315%;
+    font-size: 25px;
+    font-family: 'Chakra Petch', sans-serif;
+}
+#head5{
+    position: absolute ;
+    color:#fff;
+   left:42%;
+   top:377%;
+    font-family: 'Poppins', sans-serif; 
+    font-size: 45px;
+}
+#info5{
+    color:#fff;
+    position: absolute;
+    left:40%;
+    padding: 25px;
+    top: 415%;
+    font-size: 25px;
+    font-family: 'Chakra Petch', sans-serif;
+}
+#head6{
+    position: absolute ;
+    color:#fff;
+   left:42%;
+   top:476%;
+    font-family: 'Poppins', sans-serif; 
+    font-size: 45px;
+}
+#info6{
+    color:#fff;
+    position: absolute;
+    left:40%;
+    padding: 25px;
+    top: 515%;
+    font-size: 25px;
+    font-family: 'Chakra Petch', sans-serif;
+}
+#head7{
+    position: absolute ;
+    color:#fff;
+   left:42%;
+   top:575%;
+    font-family: 'Poppins', sans-serif; 
+    font-size: 45px;
+}
+#info7{
+    color:#fff;
+    position: absolute;
+    left:40%;
+    padding: 25px;
+    top: 615%;
+    font-size: 25px;
+    font-family: 'Chakra Petch', sans-serif;
+}
+#head8{
+    position: absolute ;
+    color:#fff;
+   left:42%;
+   top:690%;
+   padding-bottom: 30%;
+    font-family: 'Poppins', sans-serif; 
+    font-size: 45px;
+}
+#books{
+    position: absolute;
+    width: 30%;
+    top: 220%;
+    left: 5%;
+}
+#Certificates{
+ position: absolute;
+    width: 30%;
+    top: 320%;
+    left: 5%;
+}
+#workexperience{
+    position: absolute;
+       width: 22%;
+       top: 420%;
+       left: 10%;
+   }
+   #skills{
+    position: absolute;
+       width: 30%;
+       top: 520%;
+       left: 5%;
+   }
+   #Projects{
+    position: absolute;
+       width: 30%;
+       top: 620%;
+       left: 5%;
+   }
+#insta{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 705%;
+    left: 46.5%;
+}
+#insta1{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 657%;
+    left: 45%;
+}
+#reddit{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 705%;
+    left: 43.5%;
+}
+#reddit1{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 656.86%;
+    left: 36%;
+}
+#twitter{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 705%;
+    left: 43.5%;
+}
+#twitter1{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 656.86%;
+    left: 55%;
+}
+#typewriter{
+color: rgb(0, 191, 255);
+}
+
+</style>
+</head>
+<body>
+    <img id="red" src="https://images.unsplash.com/photo-1504805572947-34fad45aed93?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80">
+    <img src="https://media.istockphoto.com/id/1500238408/photo/program-code-development-icon-on-a-digital-lcd-display-with-reflection.webp?b=1&s=170667a&w=0&k=20&c=CfaVabgMcwwc-ijzVAxNs_Sz6q3JVPJnlQ-Py-dpuAQ=">
+<img id="books" src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80">
+<img id='Certificates' src="https://plus.unsplash.com/premium_photo-1682974403236-5c3f97d854d1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80">
+<img id='workexperience' src="https://images.unsplash.com/photo-1535957998253-26ae1ef29506?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1936&q=80">
+<img id="skills" src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80">
+<img id='Projects' src='https://plus.unsplash.com/premium_photo-1661281234131-5a81d87a4d2a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'>
+<menutitles>
+        <div id="menubar">
+        <div id="logo">Harshal</div>
+        <a class="a1" href="#top">Home</a>
+        <a class="a2" href="#head2">About Me</a>
+        <a class="a3" href="#head3">Education</a>
+        <a class="a4" href="#head4">Certificates</a>
+        <a class="a5" href="#head5">Work Experience</a>
+        <a class="a6" href="#head6">Skills</a>
+        <a  class="a7" href="#head7">Projects</a>
+        <a  class="a8" href="#head8">Contact</a>
+    </div>
+    </menutitles>
+    <div id="Introduction">Hi, I am Harshal and
+    <h5><span id="like">
+        I Like To
+    </span>
+    <span id="typewriter">code</span><span id="cursor">|</span></h5>
+</div>
+<div ><p id="head2"><br><br>About Me</p>
+<p id="info2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima repudiandae explicabo molestiae quaerat cupiditate voluptas quis, laborum, expedita vel architecto maxime tenetur eum? Accusamus iure reiciendis maiores quis magni quam quae cumque voluptatibus facilis hic ea suscipit fuga, quidem quo rerum vitae sed repellat nesciunt perspiciatis porro doloremque aliquid culpa? Veritatis optio distinctio assumenda culpa itaque perspiciatis maiores quam laudantium adipisci nobis quae, ratione et nulla mollitia excepturi rem deserunt? Iusto sequi iste cum placeat, officia possimus omnis recusandae temporibus animi tenetur. Aspernatur nihil aut delectus repellendus veritatis repellat molestias ut inventore. Molestiae qui ducimus nihil numquam voluptates deleniti odio.</p>
+</div>
+<div ><p id="head3"><br><br>Education</p>
+<p id="info3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint nostrum tenetur similique minus delectus voluptatem corporis magnam, corrupti voluptas. Similique ipsa optio molestiae facere et doloribus pariatur debitis sit sint quos? Omnis provident asperiores molestias sint, voluptas rem nisi illum voluptatum magni sed nesciunt debitis repellat aperiam cupiditate ut. Ipsam assumenda vitae corrupti quis, odit placeat optio provident excepturi iste pariatur suscipit quidem quas fugit quos aliquam vel odio facilis cumque accusantium earum? Voluptates ullam aliquid quaerat, aut temporibus possimus perspiciatis ipsum amet, ipsam voluptatibus itaque cum animi sint aliquam autem est dicta accusamus! Deleniti tempora temporibus nihil labore nesciunt.
+</p>
+</div>
+<div ><p id="head4"><br><br>Certificates</p>
+    <p id="info4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint nostrum tenetur similique minus delectus voluptatem corporis magnam, corrupti voluptas. Similique ipsa optio molestiae facere et doloribus pariatur debitis sit sint quos? Omnis provident asperiores molestias sint, voluptas rem nisi illum voluptatum magni sed nesciunt debitis repellat aperiam cupiditate ut. Ipsam assumenda vitae corrupti quis, odit placeat optio provident excepturi iste pariatur suscipit quidem quas fugit quos aliquam vel odio facilis cumque accusantium earum? Voluptates ullam aliquid quaerat, aut temporibus possimus perspiciatis ipsum amet, ipsam voluptatibus itaque cum animi sint aliquam autem est dicta accusamus! Deleniti tempora temporibus nihil labore nesciunt.
+    </p>
+    </div>
+    <div ><p id="head5"><br><br>Work Experience</p>
+        <p id="info5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint nostrum tenetur similique minus delectus voluptatem corporis magnam, corrupti voluptas. Similique ipsa optio molestiae facere et doloribus pariatur debitis sit sint quos? Omnis provident asperiores molestias sint, voluptas rem nisi illum voluptatum magni sed nesciunt debitis repellat aperiam cupiditate ut. Ipsam assumenda vitae corrupti quis, odit placeat optio provident excepturi iste pariatur suscipit quidem quas fugit quos aliquam vel odio facilis cumque accusantium earum? Voluptates ullam aliquid quaerat, aut temporibus possimus perspiciatis ipsum amet, ipsam voluptatibus itaque cum animi sint aliquam autem est dicta accusamus! Deleniti tempora temporibus nihil labore nesciunt.
+        </p>
+        </div>
+        <div ><p id="head6"><br><br>Skills</p>
+            <p id="info6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint nostrum tenetur similique minus delectus voluptatem corporis magnam, corrupti voluptas. Similique ipsa optio molestiae facere et doloribus pariatur debitis sit sint quos? Omnis provident asperiores molestias sint, voluptas rem nisi illum voluptatum magni sed nesciunt debitis repellat aperiam cupiditate ut. Ipsam assumenda vitae corrupti quis, odit placeat optio provident excepturi iste pariatur suscipit quidem quas fugit quos aliquam vel odio facilis cumque accusantium earum? Voluptates ullam aliquid quaerat, aut temporibus possimus perspiciatis ipsum amet, ipsam voluptatibus itaque cum animi sint aliquam autem est dicta accusamus! Deleniti tempora temporibus nihil labore nesciunt.
+            </p>
+            </div>
+            <div ><p id="head7"><br><br>Projects</p>
+                <p id="info7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint nostrum tenetur similique minus delectus voluptatem corporis magnam, corrupti voluptas. Similique ipsa optio molestiae facere et doloribus pariatur debitis sit sint quos? Omnis provident asperiores molestias sint, voluptas rem nisi illum voluptatum magni sed nesciunt debitis repellat aperiam cupiditate ut. Ipsam assumenda vitae corrupti quis, odit placeat optio provident excepturi iste pariatur suscipit quidem quas fugit quos aliquam vel odio facilis cumque accusantium earum? Voluptates ullam aliquid quaerat, aut temporibus possimus perspiciatis ipsum amet, ipsam voluptatibus itaque cum animi sint aliquam autem est dicta accusamus! Deleniti tempora temporibus nihil labore nesciunt.
+                </p>
+                </div>
+                <div><p id="head8">Contact</p>
+                    <a id="insta1"href="https://www.instagram.com/harshal.taunk/"><img id="insta" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAd1JREFUSEvNl7FOVUEURdf+EsFG/4DGQhIriZECa6W3sMNoISYmJFYW9tBjg9GGBoyNv2Dl+w+Kbc7NDBkud+6ddyHAJC+veGdmzd5z5px54paGbonL3QbbXknO5O+qUZJOW1ysKk6wl8Dj9GlZL8csgANJH2uTBsG2A3ayDKkSGxvYHnKhBv4HTNrauLGFpNV+7CWw7X3gVeOiQ2GhMj7hWh5h+3YZPAS+itpzdbbjqDL8kuohsCfUdokD/Coy/UM6mhJcChgHNyTV7lCmFjdgN9kce+rnyHqZZBcUT4A7qO2HwAvgUVL8GziU9Nd2KA/40JgFPpW0bvsB8BV40lv5GHgNnAGRnGVi5dBZ4Kz2PfCpouidpL0R1bPAUQQObP8EnlbA3yU9HzmuWeBuku0fwEYFfCRp03bUgLC7P2aBs9Vvgb0KeEfS5+u2uruHtu8DX4BnPfgR8EbSwnatAM1SHJyu7NmOursFrCX4H+Bbgs6+TnHpY8e1GlxtdRN3ONZbjc3lhfsFZAyc58TkaPa5ZN5LTWW0m0m6wBqq1WVxnyjbzT83NYmxc2om9QKb2mJYFqpv9iEQO03d5jrgyz19CvjNPvb6B5kcaLL+ys/buVnUOu9u/5NoVbFM3H9uc+gfFiwhVgAAAABJRU5ErkJggg=="/></a>
+                    <a id="reddit1" href="https://www.reddit.com/user/CyclopsOP007"><img id="reddit" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAhdJREFUSEvFlsFNAzEQRf+UwI0b5EAdENEBBQCphKQEKiBUQAmEOw3AhaSSQX9lr+zZsdeOFMWnRLL3zYz//LHgTEvOxEU3WFWvAdwBuAJwCIHvRWTXk0QTOMCeAKwrH98DIPy9JYgquBFoY4kBbESEv91VBAfoJwCW9phF6LIEd8EB+ncMzZwhfOWVvgRmphTQ3IpljYKL/5+Tg27mE7CqvgFID9bgq1TdIrLlZlW1gW9FhHvHlYFVlVnyUOtaAEivhB+nsq02JiW34J5sGdyyI9CdiHD/sCyY0beqmGX9AsBgWxZNhhXKwY1lZskiMPYor+c2iHEuaLbX4HBjxqpKQdno6VTMih8+RPF46TlWSku1TsfWGgRYA2elaaml3eOoey0iGwt+MRFOwKr6DeASwL2I/ERQAHB/1jKqajXjZuy10hihqt4A+A2wBxH5CD2bnltEiyxcXTM4y1pVHwFciMhrWtYAyUajU2YeGQNL75iK9Px5VGLPPauq2v0iMvJsH3sendldyIQjbxeUzO9zVnMODy1WsN3sOxZcyjq96zgQ2GIDKCq1Ah1cLp1SPUNiMI8UkqiawTBreoFnIvUhESLmwbkHAINInat2/a4fnPohMCnxxKsd12nJvJpp6fWROVfFf+del97RUYylyHqet7TU2sskTq6xrWrlaAIb9fIKonLjo/40D/oex2rd25Vx60db9v0DkSUBLsDWE4YAAAAASUVORK5CYII="/></a>
+                    <a id="twitter1" href="https://twitter.com/Cyclops_OP007"><img id="twitter"src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAX5JREFUSEvtVdttwzAMPE7SdJI2k6SZpOkkTSZpO0m9CYszqEBWKFF+oPkJAcOwRfKOR0oS3MnkTrh4AP+b8ptIrarvAN4A7AB8A7jwLSIDK1FVrl2/+e8GWFW/ABxTUEsCVSXQJ4BXx48E+BAUIvKc+0yALdGvBYTgRtIDzTFY9QeAQURIZLQSmOxYAY1OVfCMZDQXo9xRxWRPqXM7sWel9NZXrkVGYBZwrbbWY0rN3pXGwCTZMAP4JCKMm5g3XPmEtqphJR7BMiYGtrE/WMKepJHMXKfM52bFqur1uCd5y2df9nduj5cQ4Baa7N+UxOsxJeZkbyE1T6u9x9g9MrMTieBrCLgyu1Lzpw0Zp3sNaFXmFvAWclerrQJb1WvA3b2b9zq8Fm2LcW+Pt0yHVQdqLjAvjV7Qs4gcO8jd3E48QCjxk717AasnVI1EeS0SmLImAj3ku6sMpba+vphjIkEleDGk58c7g3uYNqe6N8FSv3CqlyaO4h7AkUKbrf8B/R+RHzjc22oAAAAASUVORK5CYII="/>
+                </div>
+    </body>
+    <script src="hello.js"></script>
+    <script>
+        function sleep(ms) {
+            return new Promise((resolve) => setTimeout(resolve,ms));
+        }
+
+        const phrases = ["Code.", "Game.", "Develop."];
+        const el = document.getElementById("typewriter")
+
+        let sleepTime = 78;
+
+        let curPhraseIndex = 0;
+
+        const writeLoop = async () => {
+            while (true) {
+                let curWord = phrases[curPhraseIndex];
+                console.log(curWord);
+
+                for (let i =0; i < curWord.length; i++) {
+                    el.innerText = curWord.substring(0, i + 1);
+                    await sleep(sleepTime);
+                }
+
+                await sleep(sleepTime * 10);
+
+                for (let i =curWord.length; i > 0; i--) {
+                    el.innerText = curWord.substring(0, i - 1);
+                    await sleep(sleepTime);
+                }
+
+                await sleep(sleepTime * 5);
+
+                if (curPhraseIndex === phrases.length - 1) {
+                    curPhraseIndex = 0;
+                } else {
+                    curPhraseIndex++;
+                }
+            }
+        };
+
+        writeLoop();
+    </script>
+   
+</html>
